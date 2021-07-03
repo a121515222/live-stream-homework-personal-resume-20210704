@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family:Microsoft JhengHei;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*img{
+    vertical-align: middle;
+}
+.content{
+    width: 1920px;
+    padding-top: 37px;
+}
+.forpadding{
+    padding:0 360px 0 360px ;
+    font-weight: bold;
+    }
+.forpadding h2{
+    font-size: 32px;  
+}
+.content h1{
+    font-size: 80px;
+    position: relative;
+}
+.content h1::before{
+    content:'' ;
+    position: absolute;
+    background: #000;
+    bottom: -5px;
+    width: 1200px;
+    height: 2px;    
+}
+.content li{
+    font-size: 24px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+}
+.name_and_selfie img{
+    padding: 50px 0 50px 0;
+}
+.tittle{
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    position: relative;
+}
+.tittle::after{
+    content: '';
+    width: 1200px;
+    height: 2px;
+    bottom: 0px;
+    position: absolute;
+    background: #000;
+}
+.english_tittle{
+    color: #A00404;
+    font-size: 24px;  
+    font-weight: bold;
+    padding-left: 16px;        
+}
+.forpadding ul{
+    padding: 12px 0 12px 0;
+}
+.work_experience{
+    padding-top: 80px;
+}
+.work_experience img{
+    display: block;
+}
+.skills,.contact{
+    background: #415165;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 24px 0;
+    text-align: center;
+}
+.tittle_bluebackground{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+.skills,.contact{
+    position: relative;
+}
+.skills::before,.contact::before{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    background: #fff;
+    top:70px;
+    left:450px ;
+}
+.tittle_bluebackground span{
+    font-size: 24px;
+    padding-left: 16px;
+}
+.skills ul,.contact ul{
+    padding: 45px 0 36px 0;
+    font-weight: lighter;
+}
+.skills ul li{
+    position: relative;
+    
+}
+.skills ul li::before{
+    position: absolute;
+    content:'';
+    height: 60px;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    background: #96A9C4;
+}
+.contact li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+.contact li a:hover{
+    color: red;
+}
+.contact li a img{
+    padding: 0 6px 0 6px;
+}
